@@ -1,6 +1,7 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import styles from '@/app/ui/home.module.css';
+import { lusitana } from '@/app/ui/fonts';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,7 +11,8 @@ export default function Page() {
       <div className={styles.shape} />
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+          <AcmeLogo />
+          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className}`}>
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
@@ -33,6 +35,13 @@ export default function Page() {
             width={1000}
             height={760}
             className="hidden md:block"
+            alt="サカナクション"
+          />
+          <Image
+            src="/TURN_VISUAL_FINAL_Re.jpg"
+            width={500}
+            height={380}
+            className="block md:hidden"
             alt="サカナクション"
           />
           {/* Add Hero Images Here */}
