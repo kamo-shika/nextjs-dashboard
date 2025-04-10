@@ -52,3 +52,12 @@ alt="サカナクション"
 > Q. What is one benefit of using CSS modules?
 > A. Provide a way to make CSS classes locally scoped to components by default, reducing the risk of styling conflicts.
 
+### bcrypt でビルドエラー
+
+```bash
+ Collecting page data  ...[Error: Cannot find module '...\nextjs-dashboard\node_modules\.pnpm\bcrypt@5.1.1\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node
+```
+
+チュートリアルのコードは`bcrypt`を使っていたが、`bcryptjs`に変更したらエラーが出なくなった。
+
+[bcryptjs](https://www.npmjs.com/package/bcryptjs)
